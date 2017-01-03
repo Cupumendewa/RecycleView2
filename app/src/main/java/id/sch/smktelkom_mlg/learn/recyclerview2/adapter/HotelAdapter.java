@@ -1,4 +1,4 @@
-package id.sch.smktelkom_mlg.learn.recyclerview1.adapter;
+package id.sch.smktelkom_mlg.learn.recyclerview2.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,8 +9,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import id.sch.smktelkom_mlg.learn.recyclerview1.R;
-import id.sch.smktelkom_mlg.learn.recyclerview1.model.Hotel;
+import id.sch.smktelkom_mlg.learn.recyclerview2.R;
+import id.sch.smktelkom_mlg.learn.recyclerview2.model.Hotel;
 
 /**
  * Created by ASUS on 1/3/2017.
@@ -18,6 +18,10 @@ import id.sch.smktelkom_mlg.learn.recyclerview1.model.Hotel;
 public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder>
 {
     ArrayList<Hotel> hotelList;
+
+    public HotelAdapter(ArrayList<Hotel> hotelList) {
+        this.hotelList = hotelList;
+    }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
@@ -42,11 +46,6 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder>
         if (hotelList!=null)
             return hotelList.size();
         return 0;
-    }
-
-    public HotelAdapter(ArrayList<Hotel> hotelList)
-    {
-        this.hotelList = hotelList;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder
