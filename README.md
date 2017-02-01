@@ -1,4 +1,4 @@
-# RecycleView2
+# RecyclerView2
 
 ![Screenshot](https://github.com/Cupumendewa/RecycleView2/blob/master/Screenshot_2017-01-18-10-45-41.png)
 ![Screenshot](https://github.com/Cupumendewa/RecycleView2/blob/master/Screenshot_2017-01-18-10-45-55.png)
